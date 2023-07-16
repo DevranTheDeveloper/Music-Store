@@ -1,0 +1,75 @@
+[
+    {
+        "img": "/Music_Store/İmg/urun1.jpg",
+        "name": "J & D E-Gitarre ST Vintage Blue",
+        "dcrpct": "Very Bass",
+        "price": "149,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun2.jpg",
+        "name": "J & D E-Gitarre LSC Gold Top P90",
+        "dcrpct": "Very Bass",
+        "price": "159,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun3.jpg",
+        "name": "Gibson SG Special Vintage Cherry",
+        "dcrpct": "Very Bass",
+        "price": "1.444,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun4.jpg",
+        "name": " Gibson J-45 Standard VS",
+        "dcrpct": "Very Bass",
+        "price": "2.799,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun5.jpg",
+        "name": "Gibson ES-335 Figured Sixties",
+        "dcrpct": "Very Bass",
+        "price": "3.899,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun6.jpg",
+        "name": "Fender Limited Edition American",
+        "dcrpct": "Very Bass",
+        "price": "1.315,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun7.jpg",
+        "name": "Gewa G3 Studio E-Drum Set",
+        "dcrpct": "Very Bass",
+        "price": "1.899,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun8.jpg",
+        "name": "Roland TD-17KVX2 E-Drum Set",
+        "dcrpct": "Very Bass",
+        "price": "1.698,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun9.jpg",
+        "name": "Gewa E-Drum Set G9 PRO 5 SE",
+        "dcrpct": "Very Bass",
+        "price": "6.299,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun10.jpg",
+        "name": " Yamaha Stage Custom Birch SBP2F56W Honey Amber",
+        "dcrpct": "Very Bass",
+        "price": "1.039,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun11.jpg",
+        "name": "Yamaha Rydeen RDP2F5 Silver Glitter",
+        "dcrpct": "Very Bass",
+        "price": "689,00 €"
+    },
+    {
+        "img": "/Music_Store/İmg/urun12.jpg",
+        "name": "Fame Maple Standard Jungle Set Schlagzeug",
+        "dcrpct": "Very Bass",
+        "price": "359,00 €"
+    }
+
+]
