@@ -309,6 +309,14 @@ footer p, h6{
     font-weight: bold;
     font-size: 18px;
 }
+.left a {
+    float: right;
+    margin-left: auto;
+}
+.left3 a {
+    float: right;
+    margin-left: auto;
+}
 .left button {
     width: 150px;
     height: 50px;
