@@ -64,7 +64,7 @@ const instruments = [
     },
     {
         "img": "/Music_Store/İmg/urun9.jpg",
-        "name": "Gewa E-Drum Set G9 PRO 5 SE",
+        "name": "Gewa E-Drum Set G9 PRO 5 SE DrunkenSweiz",
         "dcrpct": "Very Bass",
         "price": "6,299 €",
         "id": "a-d"
@@ -85,7 +85,7 @@ const instruments = [
     },
     {
         "img": "/Music_Store/İmg/urun12.jpg",
-        "name": "Fame Maple Standard Jungle Set Schlagzeug",
+        "name": "Fame Maple Standard Jungle Set",
         "dcrpct": "Very Bass",
         "price": "359 €",
         "id": "a-d"
@@ -184,6 +184,7 @@ for (let count of instruments) {
                 <p>${count.price}</p>
             </div>
             <div class="add">
+                <button class="details">Show Details</button>
                 <button class="add-cart">Add To Cart</button>
             </div>
         </div>
