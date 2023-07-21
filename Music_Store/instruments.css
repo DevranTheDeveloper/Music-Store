@@ -84,9 +84,12 @@
 .add button:hover {
     background-color: #47504aa6;
 }
-.details {
+.details button {
     margin-bottom: 5px;
 }
 .pimg img {
     border-radius: 5px;
+}
+.add button:active {
+    background-color: #525c55a6;
 }
