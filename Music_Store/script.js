@@ -13,6 +13,8 @@ logins.addEventListener("click", function(event){
         document.querySelector("#err").textContent = " "
         document.querySelector("#err").textContent = `Succesfuly Loged-In. Welcome back ${sorgu[0].name} ${sorgu[0].surname}`
         document.querySelector("#err").style.color = "lime"
+        const login = document.querySelector(".login-item")
+        login.innerHTML = sorgu[0].name + " " + sorgu[0].surname 
     } else {
         document.querySelector("#err").textContent = "Password or Email is incorrect"
         document.querySelector("#err").style.color = "red"

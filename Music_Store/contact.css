@@ -1,0 +1,71 @@
+.conh {
+    margin-top: 72px;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Music_Store/İmg/vintage.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    
+}
+.conh h1 {
+    font-weight: 600;
+    text-shadow: 0 0 20px;
+}
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+li a {
+    text-decoration: none;
+    color: #F2E9DC;
+    transition: all 300ms;
+}
+li a:hover {
+    text-decoration: underline;
+}
+li {
+    margin-bottom: 10px;
+}
+li a::selection, li h2::selection  {
+    background-color: #91C499;
+}
+li h2 {
+    margin-top: 30px;
+    color: #F2E9DC;
+    font-weight: 600;
+    border-left: 5px solid #91C499;
+    padding-left: 8px;
+}
+.l-co h1 {
+    color: #F2E9DC;
+    font-weight: 600;
+    width: 500px;
+    border-bottom: 3px solid;
+}
+.r-co {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.r-co h1 {
+    color: #F2E9DC;
+    font-weight: 600;
+    width: 500px;
+    border-bottom: 3px solid;
+    text-align: center;
+}
+.r-co h1::selection, .l-co h1::selection {
+    background-color: #91C499;
+}
+.r-co iframe  {
+    width: 900px;
+    height: 750px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
