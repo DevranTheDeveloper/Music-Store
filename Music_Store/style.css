@@ -471,6 +471,9 @@ footer p, h6{
 .buttons button:hover {
     background-color:#5f6d65;
 }
+.buttons button:active {
+    background-color: #808f85a6;
+}
 .yazi {
     text-align: center;
     margin-top: 10px;
@@ -485,4 +488,7 @@ footer p, h6{
 }
 small {
     color: #7c7c7c;
+}
+.e:hover {
+    text-decoration: underline;
 }
