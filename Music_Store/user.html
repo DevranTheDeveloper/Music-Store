@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="instruments.css">
+    <link rel="stylesheet" href="user.css">
 </head>
 <body>
     <nav class="navbar navbar-dark  fixed-top">
@@ -61,55 +61,28 @@
           </div>
         </div>
       </nav>
-      <header class="main-header">
-        <div class="main-blr">
-          <h1>INSTRUMENTS</h1>
-        </div>
-      </header>
-      <div class="blank"><h1>PRODUCTS</h1></div>
-      <div class="ana d-flex">
-          <div class="filters col-lg-3 col-md-3">
-            <h2>Instruments</h2>
-            <ul>
-                <li><h3>Guitars</h3>
-                    <ul>
-                        <li><input type="checkbox" id="e-g" value="e-g"> Electro Guitar</li>
-                        <li><input type="checkbox" id="a-g" value="a-g"> Acoustic Guitar</li>
-                        <li><input type="checkbox" id="b-g" value="b-g"> Bass Guitar</li>
-                    </ul>
-                </li><br><br>
-                <li><h3>Pianos</h3>
-                    <ul>
-                        <li><input type="checkbox" id="e-p" value="e-p"> Electro Piano</li>
-                        <li><input type="checkbox" id="a-p" value="a-p"> Acoustic Piano</li>
-                        <li><input type="checkbox" id="g-p" value="g-p"> Grand Piano</li>
-                    </ul>
-                </li><br><br>
-                <li><h3>Drums</h3>
-                    <ul>
-                        <li><input type="checkbox" id="e-d" value="e-d"> Electro Drum</li>
-                        <li><input type="checkbox" id="a-d" value="a-d"> Acoustic Drum</li>
-                    </ul>
-                </li><br><br>
-                <li><h3>Violins</h3>
-                    <ul>
-                        <li><input type="checkbox" id="c-v" value="c-v"> Classic Violin</li>
-                        <li><input type="checkbox" id="v-v" value="v-v"> Viola</li>
-                        <li><input type="checkbox" id="c-b" value="c-b"> Contrabass</li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="buttons">
-                <button id="filter">Filter</button>
+      <div class="container">
+        <div class="main-box d-flex">
+            <div class="user-pp">
+                <img src="/Music_Store/İmg/pp.webp" alt="">
             </div>
-          </div>
-          <div class="products row col-9 d-flex">
-            
-          </div>
+            <div class="user-b">
+                <h1 class="ns">Name and Surname</h1>
+                <input class="mail" type="text" value="" disabled>
+                <div class="sifr d-flex">
+                    <input class="pass" type="password" value="sifre ama gizli olacak" disabled>
+                    <button class="goster"><i class="fa-solid fa-eye fa-xl" style="color: #e1ffeb83;"></i></button>
+                </div>
+                <textarea name="Address" class="address" id="address" cols="50" rows="3" disabled></textarea>
+            </div>
+            <div class="butns">
+                <button class="update">Update Informations</button>
+
+            </div>
+        </div>
       </div>
 
-
-
+      <!-- <i class="fa-solid fa-eye-slash fa-xl" style="color: #e1ffeb83;"></i> -->
 
       <footer class="text-center text-lg-start text-muted">
         <!-- Section: Social media -->
@@ -237,7 +210,7 @@
     <script>
       AOS.init();
     </script>
-    <script src="instruments.js"></script>
+    <script src="user.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -24,3 +24,10 @@ submit.addEventListener("click", function(){
     }
 });
 
+    const get = localStorage.getItem("user");
+    const sorgu = JSON.parse(get);
+
+    if (sorgu[0].name.includes(name)) {
+        const login = document.querySelector(".login-item")
+        login.innerHTML = sorgu[0].name + " " + sorgu[0].surname 
+    }

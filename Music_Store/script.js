@@ -2,6 +2,18 @@ const logine = document.querySelector("#login-email");
 const loginp = document.querySelector("#login-password");
 const logins = document.querySelector("#login-submit");
 
+const get = localStorage.getItem("user");
+const sorgu = JSON.parse(get);
+
+if (sorgu[0].name.includes(name)) {
+    const login = document.querySelector(".login-item")
+    login.innerHTML = sorgu[0].name + " " + sorgu[0].surname
+    login.href = "user.html";
+} else {
+    const login = document.querySelector(".login-item")
+    login.href = "index.html";
+}
+
 logins.addEventListener("click", function(event){
     event.preventDefault();
     

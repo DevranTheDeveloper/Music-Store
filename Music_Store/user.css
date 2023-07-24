@@ -1,0 +1,69 @@
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 72px;
+}
+.main-box {
+    background-color: #F2E9DC;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 40px;
+}
+.user-pp {
+margin-right: 40px;
+}
+.user-pp img {
+    width: 250px;
+    border-radius: 125px;
+    border: 2px solid;
+}
+.user-b h1 {
+    font-weight: 600;
+}
+.user-b input {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-weight: 600;
+    width: 350px;
+    margin-right: 0;
+    border: transparent;
+    border-radius: 16px;
+    background-color: #808f8583;
+}
+.pass {
+    border-radius: 16px 0 0 16px !important;
+}
+.user-b button {
+    padding: 8px;
+    margin-left: 0;
+    height: fit-content;
+    border: transparent;
+    border-radius: 0 16px 16px 0;
+    background-color: #808f85;
+}
+.update {
+    padding: 8px;
+    margin-left: 0;
+    height: fit-content;
+    border: transparent;
+    border-radius: 16px;
+    background-color: #808f85;
+    color: #fdfffeb7;
+}
+.butns {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 40px;
+}
+.address {
+    background-color: #808f8583;
+    border: transparent;
+    border-radius: 16px;
+    padding: 10px;
+}
