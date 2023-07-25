@@ -1,35 +1,33 @@
-const logine = document.querySelector("#login-email");
-const loginp = document.querySelector("#login-password");
-const logins = document.querySelector("#login-submit");
+const userData = localStorage.getItem("user");
+const userInfo = JSON.parse(userData);
 
-const get = localStorage.getItem("user");
-const sorgu = JSON.parse(get);
-
-if (sorgu[0].name.includes(name)) {
-    const login = document.querySelector(".login-item")
-    login.innerHTML = sorgu[0].name + " " + sorgu[0].surname
-    login.href = "user.html";
+const loginItem = document.querySelector(".login-item");
+const loginEmail = document.querySelector("#login-email");
+const loginPassword = document.querySelector("#login-password");
+const loginSubmit = document.querySelector("#login-submit");
+const errMessage = document.querySelector("#err");
+if (userInfo) {
+    loginItem.innerHTML = userInfo[0].ns;
+    loginItem.href = "user.html"
 } else {
-    const login = document.querySelector(".login-item")
-    login.href = "index.html";
+    loginItem.href = "sign-in.html"
 }
 
-logins.addEventListener("click", function(event){
+loginSubmit.addEventListener("click", function (event) {
     event.preventDefault();
     
-    const get = localStorage.getItem("user");
-    const sorgu = JSON.parse(get);
-
-    if (sorgu && sorgu[0].email === logine.value && sorgu[0].password === loginp.value) {
+    if (userInfo && userInfo[0].email === loginEmail.value && userInfo[0].password === loginPassword.value) {
         console.log("Giriş yapıldı");
-        document.querySelector("#err").textContent = " "
-        document.querySelector("#err").textContent = `Succesfuly Loged-In. Welcome back ${sorgu[0].name} ${sorgu[0].surname}`
-        document.querySelector("#err").style.color = "lime"
-        const login = document.querySelector(".login-item")
-        login.innerHTML = sorgu[0].name + " " + sorgu[0].surname 
+        errMessage.textContent = " ";
+        errMessage.textContent = `Successfully Logged-In. Welcome back ${userInfo[0].ns}`;
+        errMessage.style.color = "lime";
+        setTimeout(() => {
+            errMessage.textContent = " ";
+        }, 5000);
+
     } else {
-        document.querySelector("#err").textContent = "Password or Email is incorrect"
-        document.querySelector("#err").style.color = "red"
+        errMessage.textContent = "Password or Email is incorrect";
+        errMessage.style.color = "red";
         return;
     }
 });
