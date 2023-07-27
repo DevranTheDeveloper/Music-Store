@@ -1,98 +1,172 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
+function Instruments() {
+    const [products, setProducts] = useState([]);
 
-function Instuments() {
+    useEffect(() => {
+        const simulatedData = [
+                {
+                    img: "/img/urun1.jpg",
+                    name: "J & D E-Gitarre ST Vintage Blue",
+                    price: "149,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "4.5",
+                    id: "e-g"
+                },
+                {
+                    img: "img/urun2.jpg",
+                    name: "J & D E-Gitarre LSC Gold Top P90",
+                    price: "159,00 €", 
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "3",
+                    id: "e-g"
+            
+                },
+                {
+                    img: "img/urun3.jpg",
+                    name: "Gibson SG Special Vintage Cherry",
+                    price: "1.444,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "5",
+                    id: "e-g"
+                },
+                {
+                    img: "img/urun4.jpg",
+                    name: " Gibson J-45 Standard VS",
+                    price: "2.799,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "4.5",
+                    id: "a-g"
+                },
+                {
+                    img: "img/urun5.jpg",
+                    name: "Gibson ES-335 Figured Sixties",
+                    price: "3.899,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "4",
+                    id: "e-g"
+                },
+                {
+                    img: "img/urun6.jpg",
+                    name: "Fender Limited Edition American",
+                    price: "1.315,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "3.5",
+                    id: "b-g"
+                },
+                {
+                    img: "img/urun7.jpg",
+                    name: "Gewa G3 Studio E-Drum Set",
+                    price: "1.899,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "3",
+                    id: "e-d"
+                },
+                {
+                    img: "img/urun8.jpg",
+                    name: "Roland TD-17KVX2 E-Drum Set",
+                    price: "1.698,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "4.5",
+                    id: "e-d"
+                },
+                {
+                    img: "img/urun9.jpg",
+                    name: "Gewa E-Drum Set G9 PRO 5 SE",
+                    price: "6.299,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "5",
+                    id: "e-d"
+                },
+                {
+                    img: "img/urun10.jpg",
+                    name: " Yamaha Stage Custom Birch SBP2F56W Honey Amber",
+                    price: "1.039,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "2.5",
+                    id: "a-d"
+                },
+                {
+                    img: "img/urun11.jpg",
+                    name: "Yamaha Rydeen RDP2F5 Silver Glitter",
+                    price: "689,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "0",
+                    id: "a-d"
+                },
+                {
+                    img: "ijpgmg/urun12.",
+                    name: "Fame Maple Standard Jungle Set Schlagzeug",
+                    price: "359,00 €",
+                    feature1: "Lorem ipsum dolor sit amet.",
+                    feature2: "Lorem ipsum dolor sit amet consectetur.",
+                    feature3: "Lorem, ipsum dolor.",
+                    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt obcaecati quidem voluptas corporis exercitationem laborum eius porro iusto velit eos.",
+                    rating: "1",
+                    id: "a-d"
+            
+                },
+                
+        ];
 
-//     fetch("products.json")
-//         .then(response => response.json())
-//         .then(products => {
-//             const prdc = document.querySelector(".products")
+        setProducts(simulatedData);
+    }, []);
 
-//             for (let count of products) {
-//                 const box = `
-//         <div class="box col-lg-3 col-md-4 col-sm-6 col-xs-12" data-filter="${count.id}">
-//           <div class="pimg">
-//             <img src="${count.img}" alt="">
-//           </div>
-//           <div class="aciklap">
-//             <h5>${count.name}</h5>
-//             <p>${count.price}</p>
-//           </div>
-//           <div class="add">
-//             <!-- Add the data-product attribute and set it to the JSON string of the product -->
-//             <a href="/Details" class="details" data-product='${JSON.stringify(count)}'><button>Show Details</button></a>
-//             <button class="add-cart">Add To Cart</button>
-//           </div>
-//         </div>
-//   `
-//                 prdc.insertAdjacentHTML("beforeend", box)
-//             }
-//             const filter = document.querySelector("#filter");
+    const addToCart = (product) => {
+        const cartItemsJSON = localStorage.getItem("cart");
+        const cartItems = cartItemsJSON ? JSON.parse(cartItemsJSON) : [];
 
-//             filter.addEventListener("click", function () {
-//                 const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        const newItem = {
+            name: product.name,
+            price: product.price,
+            id: product.id
+        };
 
-//                 if (checkboxes.length === 0) {
-//                     const boxes = document.querySelectorAll('.box');
-//                     boxes.forEach((box) => {
-//                         box.style.display = "block";
-//                     });
-//                 } else {
-//                     const selectedInstruments = Array.from(checkboxes).map((checkbox) => checkbox.value);
+        cartItems.push(newItem);
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+    };
 
-//                     const boxes = document.querySelectorAll('.box');
-
-//                     boxes.forEach((box) => {
-//                         const filterValue = box.dataset.filter;
-
-//                         if (selectedInstruments.includes(filterValue)) {
-//                             box.style.display = "block";
-//                         } else {
-//                             box.style.display = "none";
-//                         }
-//                     });
-//                 }
-//             });
-
-//             const cartItems = [];
-
-//             const addButtons = document.querySelectorAll(".add-cart");
-
-//             addButtons.forEach((button) => {
-//                 button.addEventListener("click", function () {
-//                     const box = button.closest(".box"); //en yakın üst öğeyi seçer
-//                     const name = box.querySelector(".aciklap h5").textContent; // seçilen öğelerin bilgilerini seçer
-//                     const price = box.querySelector(".aciklap p").textContent;
-//                     const id = box.dataset.filter;
-
-//                     const newItem = { // bilgisi alınan öğeleri yeni bir objeye yerleştirir
-//                         name: name,
-//                         price: price,
-//                         id: id
-//                     };
-
-//                     cartItems.push(newItem); //oluşan obje yeni dizenin içine giren 
-
-//                     const cartItemsJSON = JSON.stringify(cartItems);
-//                     localStorage.setItem("cart", cartItemsJSON); // burda da local a yazılır
-//                 });
-//             });
-
-//             const detailButtons = document.querySelectorAll(".details");
-
-//             detailButtons.forEach((button) => {
-//                 button.addEventListener("click", function (event) {
-//                     event.preventDefault(); // Prevent the default link behavior
-//                     const productData = JSON.parse(button.dataset.product);
-//                     const asd = JSON.stringify(productData);
-//                     localStorage.setItem("selectedProduct", asd);
-//                     window.location.href = button.getAttribute("href"); // Go to the details page after storing the data
-//                 });
-//             });
-//         })
-//         .catch(error => console.log("hata", error));
+    const goToDetails = (product) => {
+        localStorage.setItem("selectedProduct", JSON.stringify(product));
+        window.location.href = "/Details";
+    };
 
     return (
         <>
@@ -102,7 +176,9 @@ function Instuments() {
                     <h1>INSTRUMENTS</h1>
                 </div>
             </header>
-            <div className="blank"><h1>PRODUCTS</h1></div>
+            <div className="blank">
+                <h1>PRODUCTS</h1>
+            </div>
             <div className="ana d-flex">
                 <div className="filters col-lg-3 col-md-3">
                     <h2>Instruments</h2>
@@ -140,7 +216,21 @@ function Instuments() {
                     </div>
                 </div>
                 <div className="products row col-9 d-flex">
-
+                    {products.map((product) => (
+                        <div className="box col-lg-3 col-md-4 col-sm-6 col-xs-12" key={product.id}>
+                            <div className="pimg">
+                                <img src={product.img} alt="" />
+                            </div>
+                            <div className="aciklap">
+                                <h5>{product.name}</h5>
+                                <p>{product.price}</p>
+                            </div>
+                            <div className="add">
+                                <button onClick={() => goToDetails(product)}>Show Details</button>
+                                <button onClick={() => addToCart(product)}>Add To Cart</button>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
             <Footer />
@@ -148,4 +238,4 @@ function Instuments() {
     );
 }
 
-export default Instuments
+export default Instruments;

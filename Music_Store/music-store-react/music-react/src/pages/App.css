@@ -763,7 +763,7 @@ li h2 {
 .filters {
   position: sticky;
   top: 70px;
-  height: 80vh;
+  height: fit-content;
   box-shadow: 0 0 20px black;
   color: #F2E9DC;
   padding: 20px;
@@ -783,9 +783,11 @@ li h2 {
 .products {
   height: fit-content;
   justify-content: center;
+  display: flex;
 }
 .box {
   height: fit-content;
+  width: 350px;
   padding: 20px;
   margin-top: 40px;
   margin-right: 8px;
