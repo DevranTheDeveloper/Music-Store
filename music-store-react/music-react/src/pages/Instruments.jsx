@@ -132,7 +132,7 @@ function Instruments() {
                     id: "a-d"
                 },
                 {
-                    img: "ijpgmg/urun12.",
+                    img: "img/urun12.jpg",
                     name: "Fame Maple Standard Jungle Set Schlagzeug",
                     price: "359,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -215,7 +215,7 @@ function Instruments() {
                         <button id="filter">Filter</button>
                     </div>
                 </div>
-                <div className="products row col-9 d-flex">
+                <div className="products col-9">
                     {products.map((product) => (
                         <div className="box col-lg-3 col-md-4 col-sm-6 col-xs-12" key={product.id}>
                             <div className="pimg">

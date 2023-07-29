@@ -20,9 +20,8 @@ function Signin() {
       ];
       const newUserJSON = JSON.stringify(newUser);
       localStorage.setItem("user", newUserJSON);
-      // Yönlendirme işlemi burada React Router veya başka bir yöntemle yapılmalıdır.
-      // Şu anlık sadece consola mesaj bastırıyoruz.
       console.log("User signed up successfully.");
+      window.location.href = "/"
     } else {
       setError("Passwords do not match");
     }

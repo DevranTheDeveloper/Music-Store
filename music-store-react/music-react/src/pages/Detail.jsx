@@ -14,35 +14,6 @@ function Detail() {
       setProduct(product);
     }
   }, []);
-  const rt = product.rating;
-  const createRatingStars = (rt) => {
-    let starsHTML = '';
-        const fullStarHTML = '<i className="fa-solid fa-star fa-2xl" style="color: #fdff80;"></i>';
-        const halfStarHTML = '<i className="fa-regular fa-star-half-stroke fa-2xl" style="color: #fdff80;"></i>';
-        const emptyStarHTML = '<i className="fa-regular fa-star fa-2xl" style="color: #fdff80;"></i>';
-
-        const fullStars = Math.floor(rt);
-        const hasHalfStar = (rt - fullStars) >= 0.5;
-
-        for (let i = 0; i < fullStars; i++) {
-          starsHTML += fullStarHTML;
-        }
-
-        if (hasHalfStar) {
-          starsHTML += halfStarHTML;
-        }
-
-        const remainingStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
-        for (let i = 0; i < remainingStars; i++) {
-          starsHTML += emptyStarHTML;
-        }
-
-        return starsHTML;
-  };
-  
-  const ratingContainer = document.querySelector(".rating");
-  ratingContainer.innerHTML = createRatingStars(rt);
-
 
 
   const handleAddToCart = () => {
@@ -67,13 +38,19 @@ function Detail() {
         {product ? (
           <div className="container inner-content">
             <div className="row">
-              <div className="l-c col-lg-6">
+              <div className="l-cd col-lg-6">
                 <h2>{product.name}</h2>
-                <img src={product.img} alt="e" />
+                <div className="imgd" style={{
+                  background: `url(${product.img})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  width: '250px',
+                  heigth: '250px'
+                }}></div>
               </div>
-              <div className="r-c col-lg-6">
+              <div className="r-cd col-lg-6">
                 <div className="rating">
-                  {createRatingStars(product.rating)}
+
                 </div>
                 <h4 className="mt-5">{product.description}</h4>
                 <ul className="ozel mt-5">

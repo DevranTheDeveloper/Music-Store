@@ -778,12 +778,15 @@ li h2 {
   padding: 5px;
 }
 .ana {
-  width: 100%;
+  width: 100%; 
 }
 .products {
   height: fit-content;
+  width: fit-content;
   justify-content: center;
   display: flex;
+  padding: 40px;
+  flex-direction: column;
 }
 .box {
   height: fit-content;
@@ -910,11 +913,12 @@ li h2 {
 }
 .user-pp {
 margin-right: 40px;
-}
-.user-pp img {
-  width: 250px;
-  border-radius: 125px;
-  border: 2px solid;
+width: 300px;
+border-radius: 150px;
+background: url(img/pp.png);
+background-position: center;
+background-size: cover;
+border: 2px solid rgb(177, 177, 177);
 }
 .user-b {
   font-weight: 600;
@@ -983,4 +987,18 @@ margin-right: 40px;
 }
 Link {
   width: fit-content;
+}
+/****************************DETAILS********************************/
+.inner-content {
+  position: relative;
+}
+.inner-content .row {
+  display: flex;
+  flex-direction: row;
+}
+.l-cd {
+  padding-top: 40px;
+}
+.r-cd {
+  padding-bottom: 40px;
 }

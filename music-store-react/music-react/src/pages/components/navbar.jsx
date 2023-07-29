@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 
 function Navbar() {
+
+  const [name, setName] = useState(<i className="fas fa-solid fa-user fa-xl" style={{color: "#ffffff"}}></i>)
+
+  useEffect(() => {
+    const userJSON = localStorage.getItem("user")
+    if (userJSON) {
+      const user = JSON.parse(userJSON)
+      setName(user[0].ns)
+    } 
+  })
     return (
         <nav className="navbar navbar-dark  fixed-top">
         <div className="container-fluid">
@@ -15,7 +25,7 @@ function Navbar() {
           </ul>
           <ul className="navbar-links">
             <li><Link to={"/"+"Signin"}><i className="fas fa-solid fa-right-to-bracket fa-xl" style={{color: "#ffffff"}}></i></Link></li>
-            <li><Link to={"/"+"User"} className="login-item"><i className="fas fa-solid fa-user fa-xl" style={{color: "#ffffff"}}></i></Link></li>
+            <li><Link to={"/"+"User"} className="login-item">{name}</Link></li>
           </ul>
           <button className="navbar-toggler" type="button" datatype-bs-toggle="offcanvas" datatype-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
