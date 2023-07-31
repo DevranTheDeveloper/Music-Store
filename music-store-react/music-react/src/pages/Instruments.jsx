@@ -215,7 +215,7 @@ function Instruments() {
                         <button id="filter">Filter</button>
                     </div>
                 </div>
-                <div className="products col-9">
+                <div className="products col-9 row">
                     {products.map((product) => (
                         <div className="box col-lg-3 col-md-4 col-sm-6 col-xs-12" key={product.id}>
                             <div className="pimg">

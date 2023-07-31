@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   useEffect(() => {
-    AOS.init(); // AOS animasyonlarını başlatmak için init ediyoruz.
+    AOS.init(); 
   }, []);
 
   const [loginEmail, setLoginEmail] = useState('');
