@@ -782,7 +782,6 @@ li h2 {
 }
 .products {
   height: fit-content;
-  width: fit-content;
   justify-content: center;
   display: flex;
   padding: 40px;
