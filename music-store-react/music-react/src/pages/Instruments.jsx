@@ -10,7 +10,7 @@ function Instruments() {
     useEffect(() => {
         const simulatedData = [
                 {
-                    img: "/img/urun1.jpg",
+                    img: "src/img/urun1.jpg",
                     name: "J & D E-Gitarre ST Vintage Blue",
                     price: "149,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -21,7 +21,7 @@ function Instruments() {
                     id: "e-g"
                 },
                 {
-                    img: "img/urun2.jpg",
+                    img: "src/img/urun2.jpg",
                     name: "J & D E-Gitarre LSC Gold Top P90",
                     price: "159,00 €", 
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -33,7 +33,7 @@ function Instruments() {
             
                 },
                 {
-                    img: "img/urun3.jpg",
+                    img: "src/img/urun3.jpg",
                     name: "Gibson SG Special Vintage Cherry",
                     price: "1.444,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -44,7 +44,7 @@ function Instruments() {
                     id: "e-g"
                 },
                 {
-                    img: "img/urun4.jpg",
+                    img: "src/img/urun4.jpg",
                     name: " Gibson J-45 Standard VS",
                     price: "2.799,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -55,7 +55,7 @@ function Instruments() {
                     id: "a-g"
                 },
                 {
-                    img: "img/urun5.jpg",
+                    img: "src/img/urun5.jpg",
                     name: "Gibson ES-335 Figured Sixties",
                     price: "3.899,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -66,7 +66,7 @@ function Instruments() {
                     id: "e-g"
                 },
                 {
-                    img: "img/urun6.jpg",
+                    img: "src/img/urun6.jpg",
                     name: "Fender Limited Edition American",
                     price: "1.315,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -77,7 +77,7 @@ function Instruments() {
                     id: "b-g"
                 },
                 {
-                    img: "img/urun7.jpg",
+                    img: "src/img/urun7.jpg",
                     name: "Gewa G3 Studio E-Drum Set",
                     price: "1.899,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -88,7 +88,7 @@ function Instruments() {
                     id: "e-d"
                 },
                 {
-                    img: "img/urun8.jpg",
+                    img: "src/img/urun8.jpg",
                     name: "Roland TD-17KVX2 E-Drum Set",
                     price: "1.698,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -99,7 +99,7 @@ function Instruments() {
                     id: "e-d"
                 },
                 {
-                    img: "img/urun9.jpg",
+                    img: "src/img/urun9.jpg",
                     name: "Gewa E-Drum Set G9 PRO 5 SE",
                     price: "6.299,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -110,7 +110,7 @@ function Instruments() {
                     id: "e-d"
                 },
                 {
-                    img: "img/urun10.jpg",
+                    img: "src/img/urun10.jpg",
                     name: " Yamaha Stage Custom Birch SBP2F56W Honey Amber",
                     price: "1.039,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -121,7 +121,7 @@ function Instruments() {
                     id: "a-d"
                 },
                 {
-                    img: "img/urun11.jpg",
+                    img: "src/img/urun11.jpg",
                     name: "Yamaha Rydeen RDP2F5 Silver Glitter",
                     price: "689,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
@@ -132,7 +132,7 @@ function Instruments() {
                     id: "a-d"
                 },
                 {
-                    img: "./img/urun12.jpg",
+                    img: "src/img/urun12.jpg",
                     name: "Fame Maple Standard Jungle Set Schlagzeug",
                     price: "359,00 €",
                     feature1: "Lorem ipsum dolor sit amet.",
